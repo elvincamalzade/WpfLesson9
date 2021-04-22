@@ -21,6 +21,7 @@
         <StackPanel Width="400" >
             <TextBox Text="{Binding Text,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Height="40" FontSize="35" ></TextBox>
             <Button Command="{Binding MessageCommand}" FontSize="60">Display</Button>
+            <Button Command="{Binding SendCommand}" FontSize="60">Send</Button>
         </StackPanel>
     </Grid>
 </Window>

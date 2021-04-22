@@ -42,11 +42,13 @@ namespace WpfLesson9
 
         public string Text { get; set; } = "Salam";
         public MessageCommand MessageCommand { get; set; }
+        public SendCommand SendCommand { get; set; }
         public MainWindow()
         {
             this.DataContext = this;
 
             MessageCommand = new MessageCommand(Display);
+            SendCommand = new SendCommand(Send);
             InitializeComponent();
         }
         public void Display()
